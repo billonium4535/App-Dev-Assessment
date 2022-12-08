@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppDevAssessment</string>
+    <string name="report_bridge">Report Bridge</string>
 </resources>
