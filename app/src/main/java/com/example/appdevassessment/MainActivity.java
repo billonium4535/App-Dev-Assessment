@@ -25,12 +25,10 @@ public class MainActivity extends AppCompatActivity {
         Button reportBridgeButton = (Button) findViewById(R.id.report_bridge_button);
         Button savedBridgeButton = (Button) findViewById(R.id.saved_bridge_reports);
         Button editBridgeButton = (Button) findViewById(R.id.edit_bridge_report);
-        Button singleBridgeButton = (Button) findViewById(R.id.single_bridge_report);
 
         reportBridgeButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ReportBridgeActivity.class)));
         savedBridgeButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, SavedBridgeActivity.class)));
         editBridgeButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, EditBridgeActivity.class)));
-        singleBridgeButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, SingleBridgeActivity.class)));
 
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 

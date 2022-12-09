@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".SingleActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView_ID_Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/id_text" />
+
+    <TextView
+        android:id="@+id/textView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView_Lat_Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lat_text" />
+
+    <TextView
+        android:id="@+id/textView_Lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView_Lon_Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lon_text" />
+
+    <TextView
+        android:id="@+id/textView_Lon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView_Date_Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_text" />
+
+    <TextView
+        android:id="@+id/textView_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView_Condition_Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/condition_text" />
+
+    <TextView
+        android:id="@+id/textView_Condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/delete_record_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_record_button_text" />
+</LinearLayout>

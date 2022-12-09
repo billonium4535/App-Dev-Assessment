@@ -61,7 +61,7 @@
         android:enabled="false"
         android:minHeight="48dp"
         android:textColor="#000000"
-        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields" />
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button"

@@ -12,4 +12,11 @@
         <item>Moderate</item>
         <item>Poor</item>
     </string-array>
+    <string name="id_text">ID:</string>
+    <string name="lat_text">Latitude:</string>
+    <string name="lon_text">Longitude:</string>
+    <string name="date_text">Date:</string>
+    <string name="condition_text">Condition:</string>
+    <string name="delete_record_button_text">Delete Record</string>
+    <string name="delete_all_records_text">Delete All Records</string>
 </resources>
