@@ -30,13 +30,31 @@
       android:layout_width="match_parent"
       android:layout_height="20dp" />
 
-  <EditText
-      android:id="@+id/editTextDate"
+  <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:inputType="date"
-      android:minHeight="48dp"
-      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+      android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/selected_date_text"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onCLick_setDate"
+        android:text="@string/pick_date"
+        tools:ignore="TouchTargetSizeCheck" />
+
+  </LinearLayout>
 
   <Button
       android:id="@+id/report_bridge_button"

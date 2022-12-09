@@ -53,4 +53,10 @@ public class MainActivity extends AppCompatActivity {
             textLocation.setText("Lat:" + currentLatitude + " Lon:" + currentLongitude);
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        locationManager.removeUpdates(locationListener);
+    }
 }

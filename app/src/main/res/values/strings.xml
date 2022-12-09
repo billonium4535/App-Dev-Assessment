@@ -5,4 +5,5 @@
     <string name="saved_bridge_report_text">Saved Bridge Reports</string>
     <string name="edit_bridge_report_text">Edit Bridge Reports</string>
     <string name="single_bridge_report_text">Single Bridge Report</string>
+    <string name="pick_date">Pick Date</string>
 </resources>

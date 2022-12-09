@@ -7,8 +7,8 @@
   - [x] Create a simple logo
 - [x] Continuously track and display the current geolocation (latitude and longitude only)
 - [ ] Bridge report button (multiple times at different locations)
-  - [ ] Current location (auto)
-  - [ ] Date (user input)
+  - [x] Current location (auto)
+  - [x] Date (user input)
   - [ ] State of bridge (good, moderate, or poor)
 - [ ] Summary of all saved bridge reports in list
 - [ ] View the details of a single bridge report
