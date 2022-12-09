@@ -18,10 +18,10 @@
 - [x] Record data in SQL database
 
 ## Mark Scheme:
-15% Database related to the app. [x]<br>
-15% Code for adding a new bridge report to the database (layout design and functionality, input efficiency and user convenience). [x]<br>
-10% Code for viewing/editing a bridge report in the database (selection/specification of the record, layout design and functionality, input efficiency and user convenience). [ ]<br>
-10% Code for deleting one or all the bridge reports from the database (selection/specification of the action, layout design and functionality, input efficiency and user convenience). [x]<br>
-10% Code for viewing the summary list of reports (as a simple list). [x]<br>
-10% Overall design and layout of the app. [ ]<br>
-30% Answers to question in part B (15 marks each). [ ]<br>
+- [x] 15% Database related to the app.<br>
+- [x] 15% Code for adding a new bridge report to the database (layout design and functionality, input efficiency and user convenience).<br>
+- [ ] 10% Code for viewing/editing a bridge report in the database (selection/specification of the record, layout design and functionality, input efficiency and user convenience).<br>
+- [x] 10% Code for deleting one or all the bridge reports from the database (selection/specification of the action, layout design and functionality, input efficiency and user convenience).<br>
+- [x] 10% Code for viewing the summary list of reports (as a simple list).<br>
+- [ ] 10% Overall design and layout of the app.<br>
+- [ ] 30% Answers to question in part B (15 marks each).<br>
