@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="25dp"
     tools:context=".ReportBridgeActivity">
 
   <ImageView
@@ -28,6 +29,14 @@
   <Space
       android:layout_width="match_parent"
       android:layout_height="20dp" />
+
+  <EditText
+      android:id="@+id/editTextDate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="date"
+      android:minHeight="48dp"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
 
   <Button
       android:id="@+id/report_bridge_button"
