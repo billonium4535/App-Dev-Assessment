@@ -6,4 +6,10 @@
     <string name="edit_bridge_report_text">Edit Bridge Reports</string>
     <string name="single_bridge_report_text">Single Bridge Report</string>
     <string name="pick_date">Pick Date</string>
+    <string name="spinner_title">Bridge Condition</string>
+    <string-array name="bridge_conditions">
+        <item>Good</item>
+        <item>Moderate</item>
+        <item>Poor</item>
+    </string-array>
 </resources>

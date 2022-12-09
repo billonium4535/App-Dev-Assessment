@@ -26,6 +26,24 @@
       android:text="@string/current_gps"
       android:textSize="20sp" />
 
+  <EditText
+      android:id="@+id/latitude_var"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="0"
+      android:enabled="false"
+      android:textColor="#000000"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields" />
+
+  <EditText
+      android:id="@+id/longitude_var"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="0"
+      android:enabled="false"
+      android:textColor="#000000"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields" />
+
   <Space
       android:layout_width="match_parent"
       android:layout_height="20dp" />
@@ -55,6 +73,14 @@
         tools:ignore="TouchTargetSizeCheck" />
 
   </LinearLayout>
+
+  <Spinner
+      android:id="@+id/condition_spinner"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="48dp"
+      android:prompt="@string/spinner_title"
+      android:entries="@array/bridge_conditions" />
 
   <Button
       android:id="@+id/report_bridge_button"

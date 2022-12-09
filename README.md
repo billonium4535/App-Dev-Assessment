@@ -6,16 +6,16 @@
 - [x] Every page has a company logo as an image, or background image
   - [x] Create a simple logo
 - [x] Continuously track and display the current geolocation (latitude and longitude only)
-- [ ] Bridge report button (multiple times at different locations)
+- [x] Bridge report button (multiple times at different locations)
   - [x] Current location (auto)
   - [x] Date (user input)
-  - [ ] State of bridge (good, moderate, or poor)
+  - [x] State of bridge (good, moderate, or poor)
 - [ ] Summary of all saved bridge reports in list
 - [ ] View the details of a single bridge report
 - [ ] Edit a bridge report (only the state of the bridge and the inspection date)
 - [ ] Delete a bridge report
 - [ ] Delete all bridge reports
-- [ ] Record data in SQL database
+- [x] Record data in SQL database
 
 ## Mark Scheme:
 15% Database related to the app. [ ]<br>
