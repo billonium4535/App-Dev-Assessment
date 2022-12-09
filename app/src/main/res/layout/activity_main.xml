@@ -19,11 +19,40 @@
         android:layout_width="match_parent"
         android:layout_height="20dp" />
 
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/current_gps"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
     <Button
         android:id="@+id/report_bridge_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/report_bridge"
         app:iconPadding="10dp" />
+
+    <Button
+        android:id="@+id/saved_bridge_reports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saved_bridge_report_text" />
+
+    <Button
+        android:id="@+id/edit_bridge_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_bridge_report_text" />
+
+    <Button
+        android:id="@+id/single_bridge_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/single_bridge_report_text" />
 
 </LinearLayout>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AppDevAssessment</string>
     <string name="report_bridge">Report Bridge</string>
+    <string name="current_gps">Current GPS Location</string>
+    <string name="saved_bridge_report_text">Saved Bridge Reports</string>
+    <string name="edit_bridge_report_text">Edit Bridge Reports</string>
+    <string name="single_bridge_report_text">Single Bridge Report</string>
 </resources>

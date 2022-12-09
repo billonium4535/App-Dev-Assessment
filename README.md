@@ -5,7 +5,7 @@
 ## To Do:
 [x] Every page has a company logo as an image, or background image
   [x] Create a simple logo
-[ ] Continuously track and display the current geolocation (latitude and longitude only)
+[x] Continuously track and display the current geolocation (latitude and longitude only)
 [ ] Bridge report button (multiple times at different locations)
   [ ] Current location (auto)
   [ ] Date (user input)

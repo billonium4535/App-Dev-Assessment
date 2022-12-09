@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ReportBridgeActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      app:srcCompat="@drawable/logo"
+      tools:ignore="ContentDescription" />
+
+  <Space
+      android:layout_width="match_parent"
+      android:layout_height="20dp" />
+
+  <TextView
+      android:id="@+id/location2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/current_gps"
+      android:textSize="20sp" />
+
+  <Space
+      android:layout_width="match_parent"
+      android:layout_height="20dp" />
+
+  <Button
+      android:id="@+id/report_bridge_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/report_bridge"
+      app:iconPadding="10dp" />
+
+</LinearLayout>
