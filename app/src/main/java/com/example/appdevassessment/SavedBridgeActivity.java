@@ -46,13 +46,11 @@ public class SavedBridgeActivity extends AppCompatActivity {
 
         AdapterView.OnItemClickListener itemClickListener =
                 (listView1, itemView, position, id) -> {
-                    //Pass the option the user clicks on to character activity.
                     Intent intent = new Intent(SavedBridgeActivity.this, SingleActivity.class);
                     intent.putExtra(SingleActivity.EXTRA_BRIDGE_ID, (int) id);
                     startActivity(intent);
                 };
 
-        //Assign the listener to the list view
         listView.setOnItemClickListener(itemClickListener);
 
         deleteAllRecords.setOnClickListener(view -> {
