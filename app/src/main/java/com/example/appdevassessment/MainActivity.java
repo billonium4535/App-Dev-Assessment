@@ -22,13 +22,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button reportBridgeButton = (Button) findViewById(R.id.report_bridge_button);
-        Button savedBridgeButton = (Button) findViewById(R.id.saved_bridge_reports);
-        Button editBridgeButton = (Button) findViewById(R.id.edit_bridge_report);
+        Button reportBridgeButton = findViewById(R.id.report_bridge_button);
+        Button savedBridgeButton = findViewById(R.id.saved_bridge_reports);
 
         reportBridgeButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ReportBridgeActivity.class)));
         savedBridgeButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, SavedBridgeActivity.class)));
-        editBridgeButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, EditBridgeActivity.class)));
 
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             double currentLatitude = location.getLatitude();
             double currentLongitude = location.getLongitude();
 
-            TextView textLocation = (TextView) findViewById(R.id.location);
+            TextView textLocation = findViewById(R.id.location);
             textLocation.setText("Lat:" + currentLatitude + " Lon:" + currentLongitude);
         }
     }

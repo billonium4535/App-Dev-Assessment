@@ -19,4 +19,6 @@
     <string name="condition_text">Condition:</string>
     <string name="delete_record_button_text">Delete Record</string>
     <string name="delete_all_records_text">Delete All Records</string>
+    <string name="edit_record_button">Edit Record</string>
+    <string name="edit_title">Update Bridge</string>
 </resources>

@@ -2,7 +2,6 @@ package com.example.appdevassessment;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -25,16 +24,12 @@ public class database_handler extends SQLiteOpenHelper {
                 + "DATE TEXT, "
                 + "CONDITION TEXT);"
         );
-
-//        insertRecord(db, "53.0029512", "-2.2721329", "09/12/2022", "Good");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         if((i == 1) && (i1 == 2)) {
-
-//            insertRecord(db, "46.0054312", "-7.2259329", "01/12/2022", "Moderate");
-
+            insertRecord(db, "46.0054312", "-7.2259329", "01/12/2022", "Moderate");
         }
     }
 
@@ -57,33 +52,7 @@ public class database_handler extends SQLiteOpenHelper {
         recordValues.put("DATE", date);
         recordValues.put("CONDITION", condition);
 
-        long newRecordID = db.insert("BRIDGES", null, recordValues);
-
-        return newRecordID;
-    }
-
-    public static String getDatabaseContentsAsString(SQLiteDatabase db) {
-
-        Cursor cursor = db.query("BRIDGES",
-                new String[]{"_id", "LATITUDE", "LONGITUDE", "DATE", "CONDITION"},
-                null, null, null, null, "_id ASC");
-
-        String databaseAsString = System.getProperty("line.separator");
-
-        if(cursor.getCount() != 0) {
-            cursor.moveToFirst();
-            while (!cursor.isAfterLast()) {
-                for (int i=0; i < cursor.getColumnCount() - 1; i++) {
-                    databaseAsString += cursor.getString(i) + "     ";
-                }
-                databaseAsString += System.getProperty("line.separator");
-                cursor.moveToNext();
-            }
-
-            if(cursor != null) cursor.close();
-        }
-
-        return databaseAsString;
+        return db.insert("BRIDGES", null, recordValues);
     }
 
     public static void updateRecord(SQLiteDatabase db, Long id, String latitude, String longitude, String date, String condition) {

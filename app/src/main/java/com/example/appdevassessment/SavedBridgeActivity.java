@@ -28,12 +28,12 @@ public class SavedBridgeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_bridge);
 
-        Button deleteAllRecords = (Button) findViewById(R.id.delete_all_records);
+        Button deleteAllRecords = findViewById(R.id.delete_all_records);
 
         SQLiteOpenHelper database_handler = new database_handler(getApplicationContext());
         SQLiteDatabase db = database_handler.getReadableDatabase();
 
-        ListView listView = (ListView) findViewById(R.id.listView_bridges);
+        ListView listView = findViewById(R.id.listView_bridges);
 
         cursor = db.query("BRIDGES", new String[]{"_id", "LATITUDE", "LONGITUDE", "DATE", "CONDITION"}, null, null, null, null, null);
 
@@ -45,30 +45,29 @@ public class SavedBridgeActivity extends AppCompatActivity {
         listView.setAdapter(listAdapter);
 
         AdapterView.OnItemClickListener itemClickListener =
-                new AdapterView.OnItemClickListener(){
-                    @Override
-                    public void onItemClick(AdapterView<?> listView,
-                                            View itemView,
-                                            int position,
-                                            long id) {
-                        //Pass the option the user clicks on to character activity.
-                        Intent intent = new Intent(SavedBridgeActivity.this, SingleActivity.class);
-                        intent.putExtra(SingleActivity.EXTRA_BRIDGE_ID, (int) id);
-                        startActivity(intent);
-                    }
+                (listView1, itemView, position, id) -> {
+                    //Pass the option the user clicks on to character activity.
+                    Intent intent = new Intent(SavedBridgeActivity.this, SingleActivity.class);
+                    intent.putExtra(SingleActivity.EXTRA_BRIDGE_ID, (int) id);
+                    startActivity(intent);
                 };
 
         //Assign the listener to the list view
         listView.setOnItemClickListener(itemClickListener);
 
-        deleteAllRecords.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        deleteAllRecords.setOnClickListener(view -> {
 
-                deleteAllRecords(db);
+            deleteAllRecords(db);
 
-                Toast.makeText(SavedBridgeActivity.this, "All bridges deleted", Toast.LENGTH_SHORT).show();
-            }
+            Toast.makeText(SavedBridgeActivity.this, "All bridges deleted", Toast.LENGTH_SHORT).show();
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if(cursor != null) cursor.close();
+        if(db != null) db.close();
     }
 }
