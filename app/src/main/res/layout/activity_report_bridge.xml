@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- activity_report_bridge.xml is the layout file for the report page -->
+
+<!-- Sets the layout of the page -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +11,7 @@
     android:padding="25dp"
     tools:context=".ReportBridgeActivity">
 
+  <!-- Adds an image to the page -->
   <ImageView
       android:id="@+id/imageView2"
       android:layout_width="match_parent"
@@ -15,10 +19,12 @@
       app:srcCompat="@drawable/logo"
       tools:ignore="ContentDescription" />
 
+  <!-- Adds a space to the page -->
   <Space
       android:layout_width="match_parent"
       android:layout_height="20dp" />
 
+  <!-- Adds text to the page -->
   <TextView
       android:id="@+id/location2"
       android:layout_width="match_parent"
@@ -26,6 +32,7 @@
       android:text="@string/current_gps"
       android:textSize="20sp" />
 
+  <!-- Adds text to the page -->
   <EditText
       android:id="@+id/latitude_var"
       android:layout_width="0dp"
@@ -35,6 +42,7 @@
       android:textColor="#000000"
       tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields" />
 
+  <!-- Adds text to the page -->
   <EditText
       android:id="@+id/longitude_var"
       android:layout_width="0dp"
@@ -44,15 +52,18 @@
       android:textColor="#000000"
       tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields" />
 
+  <!-- Adds a space to the page -->
   <Space
       android:layout_width="match_parent"
       android:layout_height="20dp" />
 
+  <!-- Sets the layout for the section of the page -->
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal">
 
+    <!-- Adds text to the page -->
     <EditText
         android:id="@+id/selected_date_text"
         android:layout_width="130dp"
@@ -63,6 +74,7 @@
         android:textColor="#000000"
         tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
 
+    <!-- Adds a button to the page -->
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
@@ -74,6 +86,7 @@
 
   </LinearLayout>
 
+  <!-- Adds a spinner to the page -->
   <Spinner
       android:id="@+id/condition_spinner"
       android:layout_width="fill_parent"
@@ -82,6 +95,7 @@
       android:prompt="@string/spinner_title"
       android:entries="@array/bridge_conditions" />
 
+  <!-- Adds a button to the page -->
   <Button
       android:id="@+id/report_bridge_button"
       android:layout_width="match_parent"

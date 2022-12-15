@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- activity_saved_bridge.xml is the layout file for the saved page -->
+
+<!-- Sets the layout of the page -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +11,7 @@
     android:padding="25dp"
     tools:context=".SavedBridgeActivity">
 
+    <!-- Adds an image to the page -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -15,17 +19,20 @@
         app:srcCompat="@drawable/logo"
         tools:ignore="ContentDescription" />
 
+    <!-- Adds a space to the page -->
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp" />
 
+    <!-- Adds a list to the page -->
     <ListView
         android:id="@+id/listView_bridges"
         android:layout_width="match_parent"
-        android:layout_height="512dp">
+        android:layout_height="411dp">
 
     </ListView>
 
+    <!-- Adds a button to the page -->
     <Button
         android:id="@+id/delete_all_records"
         android:layout_width="match_parent"
